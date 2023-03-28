@@ -43,6 +43,38 @@ local scramble = Cube:generateScramble(10) -- generates a 10 move long scramble 
 Cube:move(scramble) -- scramble cube
 ```
 
+*Creating different sized cubes:*
+
+```lua
+local Lubiks = require("Lubiks")
+local Cube = Lubiks:new(2) -- creates a 2x2 cube
+
+Cube:move("R U R' F' R U R' U' R' F R2 U' R' U'") -- Do a JPerm
+print(Cube)
+--[[
+    W W
+    W W
+O O G R B G R B
+O O G G R R B B
+    Y Y
+    Y Y
+]]
+
+Cube:setSize(3) -- resets cube and sets cube size to 3x3
+print(Cube)
+--[[
+      W W W
+      W W W
+      W W W
+O O O G G G R R R B B B
+O O O G G G R R R B B B
+O O O G G G R R R B B B
+      Y Y Y
+      Y Y Y
+      Y Y Y
+]]
+```
+
 # Functions
 
 new
