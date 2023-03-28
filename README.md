@@ -1,6 +1,9 @@
 # Lubiks
 Simple NxNxN Rubik's Cube Implementation made in Lua.
 
+![Cube](https://cdn.discordapp.com/attachments/919406218840256535/1090304640349913170/image.png)
+![Cube2](https://cdn.discordapp.com/attachments/919406218840256535/1090305204752232569/image.png)
+
 # Usage Examples
 
 *Creating a cube:*
